@@ -42,7 +42,7 @@ void panobot(uint8_t d)
     u8g.setFont(u8g_font_helvB10);
     u8g.drawStr(0+d,35+d,"version");
     u8g.setFont(u8g_font_helvB10);
-    u8g.drawStr(0+d,50+d,"2018_08_1_stable_IR");
+    u8g.drawStr(0+d,50+d,"1.0 (2018-08-10");
 }
 
 void panobot1(uint8_t d)
@@ -51,24 +51,24 @@ void panobot1(uint8_t d)
     u8g.setFont(u8g_font_helvB10);
     u8g.drawStr(0+d,17+d," A:pano auto");
     u8g.setFont(u8g_font_helvB10);
-    u8g.drawStr(0+d,32+d," B:pano M");
+    u8g.drawStr(0+d,32+d," B:pano manually");
     u8g.setFont(u8g_font_helvB10);
     u8g.drawStr(0+d,47+d," C:TL hor, 3.5sec");
     u8g.setFont(u8g_font_helvB10);
-    u8g.drawStr(0+d,62+d," D:timelapse M");
+    u8g.drawStr(0+d,62+d," D:timelapse man");
 }
 
 void panorama2(uint8_t d)
 {
     u8g.setRot180();
     u8g.setFont(u8g_font_helvB10);
-    u8g.drawStr(0+d,17+d," panoramic");
+    u8g.drawStr(0+d,17+d," set shutter-");
     u8g.setFont(u8g_font_helvB10);
-    u8g.drawStr(0+d,32+d," program");
+    u8g.drawStr(0+d,32+d," time");
     u8g.setFont(u8g_font_helvB10);
-    u8g.drawStr(0+d,47+d," press 2,4,8 to set");
+    u8g.drawStr(0+d,47+d," press 2,4,8");
     u8g.setFont(u8g_font_helvB10);
-    u8g.drawStr(0+d,62+d," shutter time");   
+    u8g.drawStr(0+d,62+d," (seconds)");   
 }
 void panoramastart(uint8_t d)
 {
